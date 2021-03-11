@@ -1,6 +1,10 @@
+#AUTORA: CARLA PASSOS
+#CRIADO EM: 13/02/2021
+
 #https://www.ibpad.com.br/blog/comunicacao-digital/capturando-dados-do-twitter-com-r/
 
 library(twitteR)
+
 library(rtweet)
 library(ROAuth)
 library(ggmap)
@@ -9,10 +13,10 @@ library(tm)
 ##################################################################################################
 #ATIVANDO A CONEXAO DO R COM O TWITTER
 ##################################################################################################
-consumer_key    = 'leWl9c1UEQwvxz4e2bHmfCI0d'
-consumer_secret = 'EPnHMVcrrgbTSWRQqJvDJC0Wk5AYX1THSi9WhOxAJPuQiOkBr5'
-access_token    = '708682540383604738-ZDSvyTowI5LS0TRSP8bm3pf84DFeI6q'
-access_secret   = 'lBDqhPMZydrAMcmnq7QrEDbKzN9vh73aL3tVHb2NkIoX9'
+consumer_key    consumer_key    = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+consumer_secret = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+access_token    = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+access_secret   = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
 a <- create_token("projetofinal",consumer_key, consumer_secret, access_token, access_secret)
 ############################################################################
@@ -28,15 +32,15 @@ woeid$woeid[woeid$name=="Rio de Janeiro"]
 
 
 
-woeid$woeid[woeid$name=="São Paulo"]
-woeid$woeid[woeid$name=="Brasília"]
+woeid$woeid[woeid$name=="SÃ£o Paulo"]
+woeid$woeid[woeid$name=="BrasÃ­lia"]
 woeid$woeid[woeid$name=="Fortaleza"]
 woeid$woeid[woeid$name=="Manaus"]
 woeid$woeid[woeid$name=="Curitiba"]
 
 
 # woeid -> where on earth id
-# 455819 é o código de Brasília
+# 455819 Ã© o cÃ³digo de BrasÃ­lia
 trendsrio <- getTrends(woeid = 455825)
 trendsrio
 trendsrio$name
