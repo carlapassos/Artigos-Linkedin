@@ -1,10 +1,6 @@
-#AUTORA: CARLA PASSOS
-#CRIADO EM: 13/02/2021
-
 #https://www.ibpad.com.br/blog/comunicacao-digital/capturando-dados-do-twitter-com-r/
 
 library(twitteR)
-
 library(rtweet)
 library(ROAuth)
 library(ggmap)
@@ -13,7 +9,7 @@ library(tm)
 ##################################################################################################
 #ATIVANDO A CONEXAO DO R COM O TWITTER
 ##################################################################################################
-consumer_key    consumer_key    = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+consumer_key    = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 consumer_secret = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 access_token    = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 access_secret   = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
