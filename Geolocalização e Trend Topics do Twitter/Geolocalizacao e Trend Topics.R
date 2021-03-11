@@ -1,5 +1,8 @@
-#https://www.ibpad.com.br/blog/comunicacao-digital/capturando-dados-do-twitter-com-r/
+#AUTORA: CARLA PASSOS
+#CRIADO EM: 13/02/2021
 
+
+#BIBLIOTECAS
 library(twitteR)
 library(rtweet)
 library(ROAuth)
@@ -24,8 +27,6 @@ woeid$name[woeid$country=="Brazil"] #estados brasileiros que tem o codigo
 #num <- woeid$woeid[woeid$name=="Rio de Janeiro"]
 
 woeid$woeid[woeid$name=="Rio de Janeiro"]
-
-
 
 
 woeid$woeid[woeid$name=="São Paulo"]
