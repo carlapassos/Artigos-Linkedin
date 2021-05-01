@@ -41,7 +41,7 @@ writexl::write_xlsx(tw,"tweets_beirut.xlsx")
 #Além disso, precisa ser realizado a limpeza dos textos
 
 #Lendo o arquivo salvo
-dados <- readxl::read_xlsx("C:/Users/carla/OneDrive/Área de Trabalho/SentimentAnalysis/tweetsbeirut.xlsx")
+dados <- readxl::read_xlsx("Caminho do arquivo xlsx salvo")
 
 #Extraindo somente os tweets
 tw_text <- dados$text
